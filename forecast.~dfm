@@ -1,0 +1,135 @@
+object Form4: TForm4
+  Left = 406
+  Top = 140
+  Width = 681
+  Height = 403
+  BorderStyle = bsSizeToolWin
+  Caption = #36127#33655#39044#27979
+  Color = clSkyBlue
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 199
+    Top = 59
+    Width = 121
+    Height = 25
+    AutoSize = False
+    Caption = #35831#36755#20837#39044#27979#24180#20221#65306
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 199
+    Top = 115
+    Width = 129
+    Height = 33
+    AutoSize = False
+    Caption = #36127#33655#39044#27979#32467#26524#20026#65306
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 328
+    Top = 51
+    Width = 145
+    Height = 33
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 200
+    Top = 163
+    Width = 276
+    Height = 49
+    Caption = #24320#22987#39044#27979#20998#26512
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button1: TButton
+    Left = 249
+    Top = 235
+    Width = 180
+    Height = 41
+    Caption = #36820#22238
+    Default = True
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Edit2: TEdit
+    Left = 328
+    Top = 107
+    Width = 145
+    Height = 33
+    AutoSize = False
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOTable1
+    Left = 403
+    Top = 283
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=1.mdb' +
+      ';Mode=Share Deny None;Persist Security Info=False;Jet OLEDB:Syst' +
+      'em database="";Jet OLEDB:Registry Path="";Jet OLEDB:Database Pas' +
+      'sword="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode' +
+      '=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Tra' +
+      'nsactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:Create ' +
+      'System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB' +
+      ':Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact Without Re' +
+      'plica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 243
+    Top = 283
+  end
+  object ADOQuery1: TADOQuery
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    DataSource = DataSource1
+    Parameters = <>
+    SQL.Strings = (
+      'select '#36127#33655' from '#34920'1')
+    Left = 323
+    Top = 283
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = #34920'1'
+    Left = 283
+    Top = 283
+  end
+end
