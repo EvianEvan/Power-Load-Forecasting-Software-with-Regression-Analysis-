@@ -1,6 +1,6 @@
 object Form3: TForm3
-  Left = 284
-  Top = 133
+  Left = 290
+  Top = 116
   Width = 905
   Height = 503
   BorderStyle = bsSizeToolWin

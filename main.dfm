@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 221
-  Top = 130
+  Left = 214
+  Top = 114
   Width = 1006
   Height = 510
   Caption = #30005#21147#31995#32479#20013#38271#26399#36127#33655#39044#27979#36719#20214
@@ -16,7 +16,7 @@ object Form2: TForm2
   TextHeight = 13
   object Button5: TButton
     Left = 385
-    Top = 273
+    Top = 258
     Width = 219
     Height = 49
     Caption = #36864#20986
@@ -25,7 +25,7 @@ object Form2: TForm2
   end
   object Button1: TButton
     Left = 277
-    Top = 104
+    Top = 89
     Width = 193
     Height = 57
     Caption = #24314#31435#39044#27979#27169#22411
@@ -34,7 +34,7 @@ object Form2: TForm2
   end
   object Button3: TButton
     Left = 277
-    Top = 193
+    Top = 178
     Width = 193
     Height = 57
     Caption = #31649#29702#25968#25454#24211
@@ -43,7 +43,7 @@ object Form2: TForm2
   end
   object Button4: TButton
     Left = 517
-    Top = 193
+    Top = 178
     Width = 193
     Height = 57
     Caption = #20851#20110
@@ -52,10 +52,10 @@ object Form2: TForm2
   end
   object Button2: TButton
     Left = 517
-    Top = 104
+    Top = 89
     Width = 193
     Height = 57
-    Caption = #36827#34892#36127#33655#37327#39044#27979
+    Caption = #36827#34892#36127#33655#39044#27979
     TabOrder = 4
     OnClick = Button2Click
   end

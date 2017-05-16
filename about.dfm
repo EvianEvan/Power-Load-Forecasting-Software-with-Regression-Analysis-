@@ -1,6 +1,6 @@
 object Form6: TForm6
-  Left = 421
-  Top = 186
+  Left = 415
+  Top = 158
   Width = 584
   Height = 325
   BorderStyle = bsSizeToolWin

@@ -15,10 +15,10 @@ object Form5: TForm5
   PixelsPerInch = 96
   TextHeight = 13
   object Label2: TLabel
-    Left = 178
-    Top = 62
+    Left = 165
+    Top = 60
     Width = 89
-    Height = 33
+    Height = 30
     AutoSize = False
     Caption = #21442#25968' a'#65306
     Font.Charset = DEFAULT_CHARSET
@@ -29,8 +29,8 @@ object Form5: TForm5
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 178
-    Top = 110
+    Left = 165
+    Top = 107
     Width = 89
     Height = 33
     AutoSize = False
@@ -43,7 +43,7 @@ object Form5: TForm5
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 354
+    Left = 347
     Top = 62
     Width = 89
     Height = 33
@@ -57,7 +57,7 @@ object Form5: TForm5
     ParentFont = False
   end
   object Label5: TLabel
-    Left = 178
+    Left = 165
     Top = 158
     Width = 145
     Height = 33
@@ -71,8 +71,8 @@ object Form5: TForm5
     ParentFont = False
   end
   object Label7: TLabel
-    Left = 354
-    Top = 110
+    Left = 347
+    Top = 108
     Width = 89
     Height = 33
     AutoSize = False
@@ -85,9 +85,9 @@ object Form5: TForm5
     ParentFont = False
   end
   object Edit1: TEdit
-    Left = 242
+    Left = 224
     Top = 55
-    Width = 65
+    Width = 83
     Height = 24
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -99,9 +99,9 @@ object Form5: TForm5
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 242
+    Left = 224
     Top = 103
-    Width = 65
+    Width = 83
     Height = 24
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -113,9 +113,9 @@ object Form5: TForm5
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 434
-    Top = 55
-    Width = 65
+    Left = 422
+    Top = 56
+    Width = 84
     Height = 24
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -127,9 +127,9 @@ object Form5: TForm5
     TabOrder = 2
   end
   object Edit5: TEdit
-    Left = 306
+    Left = 293
     Top = 150
-    Width = 193
+    Width = 217
     Height = 32
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -141,18 +141,18 @@ object Form5: TForm5
     TabOrder = 3
   end
   object Button2: TButton
-    Left = 178
+    Left = 165
     Top = 199
-    Width = 327
+    Width = 351
     Height = 49
     Caption = #24314#31435#22238#24402#27169#22411
     TabOrder = 4
     OnClick = Button2Click
   end
   object Edit4: TEdit
-    Left = 434
-    Top = 103
-    Width = 65
+    Left = 421
+    Top = 104
+    Width = 86
     Height = 24
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -164,9 +164,9 @@ object Form5: TForm5
     TabOrder = 5
   end
   object Button1: TButton
-    Left = 234
+    Left = 221
     Top = 262
-    Width = 218
+    Width = 251
     Height = 41
     Caption = #36820#22238
     TabOrder = 6
@@ -174,7 +174,7 @@ object Form5: TForm5
   end
   object DataSource1: TDataSource
     DataSet = ADOTable1
-    Left = 405
+    Left = 392
     Top = 326
   end
   object ADOConnection1: TADOConnection
@@ -192,7 +192,7 @@ object Form5: TForm5
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 245
+    Left = 232
     Top = 326
   end
   object ADOQuery1: TADOQuery
@@ -203,7 +203,7 @@ object Form5: TForm5
     Parameters = <>
     SQL.Strings = (
       'select '#36127#33655' from '#34920'1')
-    Left = 325
+    Left = 312
     Top = 326
   end
   object ADOTable1: TADOTable
@@ -211,7 +211,7 @@ object Form5: TForm5
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = #34920'1'
-    Left = 285
+    Left = 272
     Top = 326
   end
 end

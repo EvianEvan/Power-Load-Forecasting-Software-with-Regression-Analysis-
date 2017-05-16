@@ -15,7 +15,7 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object Button5: TButton
-    Left = 387
+    Left = 385
     Top = 273
     Width = 219
     Height = 49
@@ -24,7 +24,7 @@ object Form2: TForm2
     OnClick = Button5Click
   end
   object Button1: TButton
-    Left = 279
+    Left = 277
     Top = 104
     Width = 193
     Height = 57
@@ -33,7 +33,7 @@ object Form2: TForm2
     OnClick = Button1Click
   end
   object Button3: TButton
-    Left = 279
+    Left = 277
     Top = 193
     Width = 193
     Height = 57
@@ -42,7 +42,7 @@ object Form2: TForm2
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 519
+    Left = 517
     Top = 193
     Width = 193
     Height = 57
@@ -51,7 +51,7 @@ object Form2: TForm2
     OnClick = Button4Click
   end
   object Button2: TButton
-    Left = 519
+    Left = 517
     Top = 104
     Width = 193
     Height = 57

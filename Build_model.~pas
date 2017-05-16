@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ADODB, DB, StdCtrls;
+  Dialogs, ADODB, DB, StdCtrls, math;
 
 type
   TForm5 = class(TForm)
@@ -145,13 +145,15 @@ procedure TForm5.Button2Click(Sender: TObject);
   //part4：求回归方程的标准差(sd:Standard Deviation)：
   sd := sqrt((yy-eb*xy)/(count-2));
 
-    EDIT1.TEXT := FloatToStr(ea);
-    EDIT2.TEXT := FloatToStr(eb);
-    EDIT3.TEXT := FloatToStr(cc);
-    EDIT5.TEXT := 'y = '+FloatToStr(ea)+'+'+FloatToStr(eb)+'x';
-    //EDIT6.TEXT := FloatToStr(result);
-    EDIT4.TEXT := FloatToStr(sd);
-
+    EDIT1.TEXT := FloatToStr(roundto(ea,-2));
+    EDIT2.TEXT := FloatToStr(roundto(eb,-2));
+    EDIT3.TEXT := FloatToStr(roundto(cc,-2));
+    EDIT4.TEXT := FloatToStr(roundto(sd,-2));
+    
+    if eb<0 then
+    EDIT5.TEXT := 'y = '+FloatToStr(roundto(ea,-2))+FloatToStr(roundto(eb,-2))+'x'
+    else
+    EDIT5.TEXT := 'y = '+FloatToStr(roundto(ea,-2))+'+'+FloatToStr(roundto(eb,-2))+'x';
 end;
 
 procedure TForm5.Button1Click(Sender: TObject);

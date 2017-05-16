@@ -86,7 +86,7 @@ object Form5: TForm5
   end
   object Edit1: TEdit
     Left = 242
-    Top = 54
+    Top = 55
     Width = 65
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -100,7 +100,7 @@ object Form5: TForm5
   end
   object Edit2: TEdit
     Left = 242
-    Top = 102
+    Top = 103
     Width = 65
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -114,7 +114,7 @@ object Form5: TForm5
   end
   object Edit3: TEdit
     Left = 434
-    Top = 54
+    Top = 55
     Width = 65
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -142,7 +142,7 @@ object Form5: TForm5
   end
   object Button2: TButton
     Left = 178
-    Top = 206
+    Top = 199
     Width = 327
     Height = 49
     Caption = #24314#31435#22238#24402#27169#22411
@@ -151,7 +151,7 @@ object Form5: TForm5
   end
   object Edit4: TEdit
     Left = 434
-    Top = 102
+    Top = 103
     Width = 65
     Height = 24
     Font.Charset = DEFAULT_CHARSET
@@ -165,8 +165,8 @@ object Form5: TForm5
   end
   object Button1: TButton
     Left = 234
-    Top = 278
-    Width = 217
+    Top = 262
+    Width = 218
     Height = 41
     Caption = #36820#22238
     TabOrder = 6
