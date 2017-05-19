@@ -1,4 +1,4 @@
-unit Build_model;
+unit Build_model_2;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   Dialogs, ADODB, DB, StdCtrls, math;
 
 type
-  TForm5 = class(TForm)
+  TForm7 = class(TForm)
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -27,6 +27,7 @@ type
     procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
 
+
   private
     { Private declarations }
   public
@@ -34,9 +35,11 @@ type
   end;
 
 var
-  Form5: TForm5;
+  Form7: TForm7;
 
 implementation
+
+uses Build_model;
 
 {$R *.dfm}
 
@@ -59,7 +62,7 @@ implementation
 
 
 //预测分析按钮
-procedure TForm5.Button2Click(Sender: TObject);
+procedure TForm7.Button2Click(Sender: TObject);
   var n,i,count:integer;   //n和i循环变量，count为数据个数；
 
   var ya,la,ea,eb,
@@ -84,7 +87,7 @@ procedure TForm5.Button2Click(Sender: TObject);
   //with ADOQuery1 do;
   ADOQuery1.Close;
   ADOQuery1.SQL.Clear;
-  ADOQuery1.sql.add('select 年份 from 表1 order by 年份');
+  ADOQuery1.sql.add('select GDP from 表1 order by 年份');
   ADOQuery1.open;
   //遍历年份数据并存入Data_1数组
   setlength(data_1, ADOQuery1.RecordCount); //设定动态数组的长度
@@ -92,7 +95,7 @@ procedure TForm5.Button2Click(Sender: TObject);
   ADOQuery1.first;
   while not ADOQuery1.eof do
   begin
-    n := ADOQuery1.fieldbyname('年份').value; //取name字段
+    n := ADOQuery1.fieldbyname('GDP').value; //取name字段
     data_1[i] := n;
     i:=i+1;
     ADOQuery1.next;
@@ -115,7 +118,7 @@ procedure TForm5.Button2Click(Sender: TObject);
     ADOQuery1.next;
   end;
 
-  //pairt2：求出年份、负荷的平均值（ya、la）
+  //pairt2：求出GDP、负荷的平均值（ya、la）
     i := 0;
   while i<count do
   begin
@@ -156,10 +159,10 @@ procedure TForm5.Button2Click(Sender: TObject);
     EDIT5.TEXT := 'y = '+FloatToStr(roundto(ea,-2))+'+'+FloatToStr(roundto(eb,-2))+'x';
 end;
 
-procedure TForm5.Button1Click(Sender: TObject);
-begin
-  form5.Close;
-end;
 
+procedure TForm7.Button1Click(Sender: TObject);
+begin
+     form7.Close;
+end;
 
 end.

@@ -1,10 +1,10 @@
 object Form3: TForm3
-  Left = 284
-  Top = 133
+  Left = 290
+  Top = 116
   Width = 905
   Height = 503
   BorderStyle = bsSizeToolWin
-  Caption = #24405#20837#25968#25454
+  Caption = #31649#29702#25968#25454#24211
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -30,7 +30,7 @@ object Form3: TForm3
   end
   object Label2: TLabel
     Left = 92
-    Top = 117
+    Top = 106
     Width = 36
     Height = 16
     Caption = #36127#33655#65306
@@ -41,9 +41,22 @@ object Form3: TForm3
     Font.Style = []
     ParentFont = False
   end
+  object Label3: TLabel
+    Left = 92
+    Top = 153
+    Width = 41
+    Height = 16
+    Caption = 'GDP'#65306
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
   object Button2: TButton
     Left = 132
-    Top = 334
+    Top = 344
     Width = 194
     Height = 43
     Caption = #36820#22238
@@ -74,19 +87,28 @@ object Form3: TForm3
       item
         Expanded = False
         FieldName = #24180#20221
-        Width = 90
+        Title.Caption = #24180#20221' ('#24180')'
+        Width = 95
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'GDP'
+        Title.Caption = 'GDP ('#20159#20803')'
+        Width = 97
         Visible = True
       end
       item
         Expanded = False
         FieldName = #36127#33655
-        Width = 263
+        Title.Caption = #36127#33655' ('#19975'kWh)'
+        Width = 160
         Visible = True
       end>
   end
   object DBNavigator1: TDBNavigator
     Left = 52
-    Top = 181
+    Top = 199
     Width = 363
     Height = 49
     DataSource = DataSource1
@@ -110,7 +132,7 @@ object Form3: TForm3
   end
   object DBEdit2: TDBEdit
     Left = 140
-    Top = 117
+    Top = 106
     Width = 225
     Height = 24
     AutoSelect = False
@@ -126,7 +148,7 @@ object Form3: TForm3
   end
   object DBNavigator2: TDBNavigator
     Left = 76
-    Top = 260
+    Top = 272
     Width = 312
     Height = 47
     DataSource = DataSource1
@@ -160,6 +182,22 @@ object Form3: TForm3
     TabOrder = 8
     Visible = False
   end
+  object DBEdit3: TDBEdit
+    Left = 140
+    Top = 153
+    Width = 225
+    Height = 24
+    AutoSelect = False
+    DataField = 'GDP'
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+  end
   object DataSource1: TDataSource
     DataSet = ADOTable1
     Left = 335
@@ -192,7 +230,6 @@ object Form3: TForm3
     Top = 21
   end
   object ADOQuery1: TADOQuery
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     DataSource = DataSource1

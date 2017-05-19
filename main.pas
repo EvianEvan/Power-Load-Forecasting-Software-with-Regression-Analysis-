@@ -19,8 +19,9 @@ type
     N5: TMenuItem;
     Button4: TButton;
     Button2: TButton;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    Button6: TButton;
+    Button7: TButton;
+
     procedure Button3Click(Sender: TObject);
     procedure Button4Click(Sender: TObject);
     procedure Button5Click(Sender: TObject);
@@ -28,6 +29,10 @@ type
     procedure N3Click(Sender: TObject);
     procedure N4Click(Sender: TObject);
     procedure N5Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button7Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
 
     
   private
@@ -41,20 +46,13 @@ var
 
 implementation
 
-uses login, input, forecast, Build_model, about;
+uses login, input, forecast, Build_model, about, Build_model_2, forecast_2;
 
 {$R *.dfm}
 
 
-procedure TForm2.Button1Click(Sender: TObject);
-begin
-  form5.show;
-end;
 
-procedure TForm2.Button2Click(Sender: TObject);
-begin
-  form4.show;
-end;
+
 
 procedure TForm2.Button3Click(Sender: TObject);
 begin
@@ -92,6 +90,26 @@ end;
 procedure TForm2.N5Click(Sender: TObject);
 begin
   form6.Show;
+end;
+
+procedure TForm2.Button1Click(Sender: TObject);
+begin
+  form5.Show;
+end;
+
+procedure TForm2.Button7Click(Sender: TObject);
+begin
+  form7.Show;
+end;
+
+procedure TForm2.Button2Click(Sender: TObject);
+begin
+  form4.Show;
+end;
+
+procedure TForm2.Button6Click(Sender: TObject);
+begin
+  form8.Show;
 end;
 
 end.

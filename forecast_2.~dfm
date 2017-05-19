@@ -1,10 +1,9 @@
-object Form4: TForm4
-  Left = 406
+object Form8: TForm8
+  Left = 407
   Top = 140
-  Width = 681
-  Height = 403
-  BorderStyle = bsSizeToolWin
-  Caption = #26681#25454#24180#20221#36827#34892#36127#33655#39044#27979
+  Width = 680
+  Height = 401
+  Caption = #26681#25454'GDP'#36827#34892#36127#33655#39044#27979
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,12 +14,12 @@ object Form4: TForm4
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 200
+    Left = 201
     Top = 56
     Width = 121
     Height = 25
     AutoSize = False
-    Caption = #35831#36755#20837#39044#27979#24180#20221#65306
+    Caption = #35831#36755#20837#39044#27979'GDP'#65306
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -29,7 +28,7 @@ object Form4: TForm4
     ParentFont = False
   end
   object Label6: TLabel
-    Left = 200
+    Left = 201
     Top = 112
     Width = 129
     Height = 33
@@ -43,7 +42,7 @@ object Form4: TForm4
     ParentFont = False
   end
   object Edit1: TEdit
-    Left = 329
+    Left = 330
     Top = 48
     Width = 145
     Height = 33
@@ -57,7 +56,7 @@ object Form4: TForm4
     TabOrder = 0
   end
   object Button2: TButton
-    Left = 201
+    Left = 202
     Top = 160
     Width = 276
     Height = 49
@@ -66,7 +65,7 @@ object Form4: TForm4
     OnClick = Button2Click
   end
   object Button1: TButton
-    Left = 250
+    Left = 251
     Top = 230
     Width = 180
     Height = 41
@@ -76,7 +75,7 @@ object Form4: TForm4
     OnClick = Button1Click
   end
   object Edit2: TEdit
-    Left = 329
+    Left = 330
     Top = 104
     Width = 145
     Height = 33
@@ -92,7 +91,7 @@ object Form4: TForm4
   end
   object DataSource1: TDataSource
     DataSet = ADOTable1
-    Left = 404
+    Left = 405
     Top = 280
   end
   object ADOConnection1: TADOConnection
@@ -110,7 +109,7 @@ object Form4: TForm4
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'
-    Left = 244
+    Left = 245
     Top = 280
   end
   object ADOQuery1: TADOQuery
@@ -121,7 +120,7 @@ object Form4: TForm4
     Parameters = <>
     SQL.Strings = (
       'select '#36127#33655' from '#34920'1')
-    Left = 324
+    Left = 325
     Top = 280
   end
   object ADOTable1: TADOTable
@@ -129,7 +128,7 @@ object Form4: TForm4
     Connection = ADOConnection1
     CursorType = ctStatic
     TableName = #34920'1'
-    Left = 284
+    Left = 285
     Top = 280
   end
 end

@@ -7,7 +7,8 @@ uses
   input in 'input.pas' {Form3},
   forecast in 'forecast.pas' {Form4},
   Build_model in 'Build_model.pas' {Form5},
-  about in 'about.pas' {Form6};
+  about in 'about.pas' {Form6},
+  Build_model_2 in 'Build_model_2.pas' {Form7};
 
 {$R *.res}
 
@@ -19,6 +20,7 @@ begin
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
   Application.Run;
 end.
 

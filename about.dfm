@@ -1,8 +1,8 @@
 object Form6: TForm6
   Left = 415
   Top = 158
-  Width = 584
-  Height = 325
+  Width = 612
+  Height = 369
   BorderStyle = bsSizeToolWin
   Caption = #20851#20110
   Color = clMoneyGreen
@@ -15,8 +15,8 @@ object Form6: TForm6
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 58
-    Top = 96
+    Left = 67
+    Top = 97
     Width = 473
     Height = 46
     AutoSize = False
@@ -29,8 +29,8 @@ object Form6: TForm6
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 56
-    Top = 160
+    Left = 65
+    Top = 161
     Width = 481
     Height = 41
     AutoSize = False
@@ -43,8 +43,8 @@ object Form6: TForm6
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 192
-    Top = 48
+    Left = 201
+    Top = 49
     Width = 168
     Height = 29
     AutoSize = False
@@ -57,9 +57,9 @@ object Form6: TForm6
     ParentFont = False
   end
   object Button1: TButton
-    Left = 200
-    Top = 220
-    Width = 177
+    Left = 208
+    Top = 229
+    Width = 184
     Height = 33
     Cursor = crCross
     Caption = 'OK'

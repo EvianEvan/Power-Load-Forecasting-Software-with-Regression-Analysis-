@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ADODB, DB;
+  Dialogs, StdCtrls, ADODB, DB, math;
 
 type
   TForm4 = class(TForm)
@@ -152,6 +152,7 @@ procedure TForm4.Button2Click(Sender: TObject);
   //根据输入的年份进行负荷预测
   input_year := StrToInt(EDIT1.TEXT);
   result := ea + eb * input_year;
+  result := RoundTo(result,-2);   //只保留两位小数
 
 
    // EDIT2.TEXT := FloatToStr(ea);

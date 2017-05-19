@@ -25,6 +25,8 @@ type
     Button1: TButton;
     Button3: TButton;
     Button4: TButton;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
     procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     
@@ -89,6 +91,7 @@ begin
    TMyNavigator(DBNavigator2).Buttons[nbCancel].Glyph:=nil;   //不显示图标
    TMyNavigator(DBNavigator2).Buttons[nbRefresh].Glyph:=nil;   //不显示图标
 end;
+
 
 
 
