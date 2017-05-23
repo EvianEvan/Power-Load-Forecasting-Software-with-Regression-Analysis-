@@ -80,7 +80,6 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-    PasswordChar = '*'
     TabOrder = 1
   end
   object Button1: TButton
@@ -101,5 +100,45 @@ object Form1: TForm1
     Caption = #36864#20986
     TabOrder = 3
     OnClick = Button2Click
+  end
+  object ADOConnection1: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=1.mdb' +
+      ';Mode=Share Deny None;Persist Security Info=False;Jet OLEDB:Syst' +
+      'em database="";Jet OLEDB:Registry Path="";Jet OLEDB:Database Pas' +
+      'sword="";Jet OLEDB:Engine Type=5;Jet OLEDB:Database Locking Mode' +
+      '=1;Jet OLEDB:Global Partial Bulk Ops=2;Jet OLEDB:Global Bulk Tra' +
+      'nsactions=1;Jet OLEDB:New Database Password="";Jet OLEDB:Create ' +
+      'System Database=False;Jet OLEDB:Encrypt Database=False;Jet OLEDB' +
+      ':Don'#39't Copy Locale on Compact=False;Jet OLEDB:Compact Without Re' +
+      'plica Repair=False;Jet OLEDB:SFP=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 175
+    Top = 277
+  end
+  object ADOTable1: TADOTable
+    Active = True
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    TableName = #34920'2'
+    Left = 223
+    Top = 277
+  end
+  object DataSource1: TDataSource
+    DataSet = ADOQuery1
+    Left = 344
+    Top = 280
+  end
+  object ADOQuery1: TADOQuery
+    Connection = ADOConnection1
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from '#34920'2')
+    Left = 272
+    Top = 280
   end
 end
